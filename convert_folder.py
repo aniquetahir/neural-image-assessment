@@ -29,6 +29,8 @@ def convert_folder(folder_path):
             'ffmpeg',
             '-i',
             os.path.join(folder_path, video),
+            '-r',
+            '10/60',
             os.path.join(results_path,'%06d.jpg'), '-hide_banner'])
 
 
